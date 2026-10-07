@@ -1,0 +1,211 @@
+/* =========================================
+   VARIABLES Y RESET
+   ========================================= */
+:root {
+    --primary-color: #0b2545;
+    --secondary-color: #134074;
+    --accent-color: #0066cc;
+    --green-color: #00a86b;
+    --text-color: #333333;
+    --text-light: #6c757d;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   BOTONES Y COLORES PERSONALIZADOS
+   ========================================= */
+.bg-custom-primary { background-color: var(--primary-color) !important; }
+.text-custom-primary { color: var(--primary-color) !important; }
+.text-primary-custom { color: var(--accent-color) !important; }
+
+.btn-primary-custom {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 6px;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+}
+.btn-primary-custom:hover {
+    background-color: #0052a3;
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.btn-outline-custom:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+/* =========================================
+   HEADER (Z-index alto)
+   ========================================= */
+.header { 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    z-index: 1050 !important;
+}
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+}
+.navbar-nav .nav-link:hover { color: var(--white) !important; }
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.hero-section {
+    background-color: var(--bg-light);
+    padding: 60px 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* =========================================
+   BENEFICIOS (Íconos en Círculos)
+   ========================================= */
+.benefit-item { transition: var(--transition); }
+.benefit-item:hover { transform: translateY(-5px); }
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.15);
+    transition: var(--transition);
+}
+.benefit-item:hover .icon-circle { background-color: var(--accent-color); }
+.benefit-item:hover .icon-circle i { color: var(--white) !important; }
+
+/* =========================================
+   FORMULARIO DE REGISTRO (Flotante / Sticky)
+   ========================================= */
+.register-form-container { 
+    border: 1px solid #e9ecef; 
+    z-index: 10 !important;
+}
+
+/* CORRECCIÓN: Se eliminó el padding personalizado para no chocar con la etiqueta flotante */
+.form-floating > .form-control,
+.form-floating > .form-select {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 102, 204, 0.15);
+}
+
+.form-floating > label { color: var(--text-light); font-size: 0.95rem; }
+
+/* =========================================
+   TARJETAS DE CARRERAS
+   ========================================= */
+.program-card {
+    transition: var(--transition);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+.program-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+.program-card img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.program-card .btn-saber-mas {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition);
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.program-card .btn-saber-mas:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+/* =========================================
+   FOOTER Y NEWSLETTER
+   ========================================= */
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+    text-decoration: none;
+}
+.social-icon:hover { background-color: var(--accent-color); transform: translateY(-3px); }
+
+#newsletterForm input {
+    border-radius: 6px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+}
+
+#newsletter-message { color: #ffc107; font-weight: 500; }
+#newsletter-message.success { color: #28a745; }
+#newsletter-message.error { color: #dc3545; }
+
+/* =========================================
+   MEDIA QUERIES (Responsive)
+   ========================================= */
+@media (max-width: 991px) {
+    .register-form-container { position: static !important; margin-top: 30px; }
+    .hero-image { max-height: 300px; margin-top: 30px; }
+}
+
+@media (max-width: 768px) {
+    .hero-section { padding: 40px 0; }
+    .hero-text h1 { font-size: 2.2rem; }
+    .register-form-container { padding: 20px; }
+}

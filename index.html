@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stiventech - Forma tu futuro</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilo EXTERNA -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Hoja de estilo INTERNA -->
+    <style>
+        .bg-custom-light { background-color: #f4f7f6 !important; }
+        .text-custom-primary { color: #0b2545 !important; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom-primary py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                    <i class="fas fa-graduation-cap fa-2x text-white me-2"></i>
+                    <span class="logo-text text-white fw-bold">Stiventech <br><small class="fw-light">Institucion escolar</small></span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#carreras">Carreras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                    <a href="#registro" class="btn btn-primary-custom px-4">Matricúlate</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN HERO -->
+        <section class="hero-section py-5" id="inicio">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold text-custom-primary mb-4">Forma tu futuro con educación de calidad</h1>
+                        <p class="lead text-muted mb-4">Programas académicos diseñados para impulsar tu desarrollo profesional y personal.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#registro" class="btn btn-primary-custom btn-lg">Inscríbete</a>
+                            <a href="#contacto" class="btn btn-outline-custom btn-lg">Contactanos</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="img/hero.jpg" alt="Estudiantes" class="img-fluid rounded-4 shadow-lg hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="container py-5">
+            <div class="row g-5 align-items-start">
+                
+                <!-- COLUMNA IZQUIERDA: Nosotros y Carreras -->
+                <div class="col-lg-8">
+                    
+                    <!-- Sección Nosotros -->
+                    <section class="mb-5" id="nosotros">
+                        <h2 class="text-center text-custom-primary fw-bold mb-5">¿Por qué estudiar con nosotros?</h2>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center">
+                            <div class="col">
+                                <div class="benefit-item p-3">
+                                    <div class="icon-circle mb-3">
+                                        <i class="fas fa-graduation-cap fa-lg text-primary-custom"></i>
+                                    </div>
+                                    <h3 class="h6 fw-bold text-custom-primary">Educación de calidad</h3>
+                                    <p class="text-muted small mb-0">Docentes altamente capacitados.</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="benefit-item p-3">
+                                    <div class="icon-circle mb-3">
+                                        <i class="fas fa-briefcase fa-lg text-primary-custom"></i>
+                                    </div>
+                                    <h3 class="h6 fw-bold text-custom-primary">Oportunidades</h3>
+                                    <p class="text-muted small mb-0">Convenios con empresas líderes.</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="benefit-item p-3">
+                                    <div class="icon-circle mb-3">
+                                        <i class="fas fa-building fa-lg text-primary-custom"></i>
+                                    </div>
+                                    <h3 class="h6 fw-bold text-custom-primary">Instalaciones</h3>
+                                    <p class="text-muted small mb-0">Laboratorios modernos y equipados.</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="benefit-item p-3">
+                                    <div class="icon-circle mb-3">
+                                        <i class="fas fa-lightbulb fa-lg text-primary-custom"></i>
+                                    </div>
+                                    <h3 class="h6 fw-bold text-custom-primary">Innovación</h3>
+                                    <p class="text-muted small mb-0">Metodologías de enseñanza actuales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sección Carreras -->
+                    <section id="carreras">
+                        <h2 class="text-center text-custom-primary fw-bold mb-5">Nuestras Carreras Académicas</h2>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="carreras-container">
+                            <div class="col-12 text-center py-5">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Cargando carreras...</span>
+                                </div>
+                                <p class="mt-2 text-muted">Cargando carreras desde la base de datos...</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- COLUMNA DERECHA: Formulario de Registro -->
+                <div class="col-lg-4">
+                    <div class="register-form-container p-4 p-md-5 bg-white rounded-4 shadow-lg border-0 sticky-top" id="registro" style="top: 100px; z-index: 1;">
+                        <h2 class="h4 fw-bold text-custom-primary text-center mb-1">Regístrate ahora</h2>
+                        <p class="text-muted text-center mb-4 small">Completa tus datos y comienza tu camino al éxito.</p>
+                        
+                        <form id="registerForm" novalidate>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+                                <label for="nombre">Nombre completo</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                                <label for="email">Correo electrónico</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required maxlength="9" inputmode="numeric">
+                                <label for="telefono">Teléfono (9 dígitos)</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="programa" required>
+                                    <option value="" selected disabled>Selecciona una carrera</option>
+                                </select>
+                                <label for="programa">Carrera de interés</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="number" class="form-control" id="edad" placeholder="Edad" min="15" max="99" required>
+                                <label for="edad">Edad</label>
+                            </div>
+                            
+                            <div id="form-message" class="alert d-none" role="alert"></div>
+
+                            <button type="submit" class="btn btn-primary-custom w-100 py-3 fw-bold shadow-sm">Crear cuenta</button>
+                            <a href="#" class="d-block text-center mt-3 small text-primary-custom">¿Ya tienes cuenta? Inicia sesión</a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-custom-primary text-white pt-5" id="contacto">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-graduation-cap fa-2x text-white me-2"></i>
+                        <span class="text-white fw-bold">Stiventech <br><small class="fw-light">Institucion escolar</small></span>
+                    </div>
+                    <p class="text-white-50 small">Formando a los líderes del mañana con educación de calidad y visión innovadora.</p>
+                    
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="h6 fw-bold mb-3">Enlaces rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white-50 text-decoration-none small">Inicio</a></li>
+                        <li><a href="#nosotros" class="text-white-50 text-decoration-none small">Nosotros</a></li>
+                        <li><a href="#carreras" class="text-white-50 text-decoration-none small">Carreras</a></li>
+                        <li><a href="#beneficios" class="text-white-50 text-decoration-none small">Beneficios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 fw-bold mb-3">Contáctanos</h4>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary-custom"></i> Av. Principal , 123 </li>
+                        <li class="mb-2"><i class="fas fa-phone me-2 text-primary-custom"></i> +51 987 654 321</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2 text-primary-custom"></i> info@Stiventech.com</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 fw-bold mb-3">Síguenos y recibe novedades</h4>
+                    <form id="newsletterForm" class="d-flex gap-2">
+                        <input type="email" id="newsletterEmail" class="form-control form-control-sm" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary-custom btn-sm px-3">Subscribirse</button>
+                    </form>
+                    <div id="newsletter-message" class="small mt-2"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom bg-black bg-opacity-25 text-center py-3">
+            <p class="mb-0 small text-white-50">&copy;Derechos reservados son de Stiventech.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script JS EXTERNO -->
+    <script src="js/script.js"></script>
+</body>
+</html>
